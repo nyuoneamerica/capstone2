@@ -1,0 +1,32 @@
+[1] "##########################"
+[1] "Multiple Linear Regression on Tech Revenue - Talent"
+[1] "##########################"
+
+Call:
+lm(formula = TecRev ~ TechHub + Amazon + TopGrad + PopDensity + 
+    PercentBach + AvgTuition + MaleFemaleRatio + Labor + VCFirms, 
+    data = talent2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.22121 -0.05076 -0.01659  0.02776  0.67446 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      0.04388    0.01640   2.676  0.00782 ** 
+TechHub1         0.02570    0.02558   1.005  0.31576    
+Amazon1          0.12385    0.01790   6.918 2.23e-11 ***
+TopGrad1        -0.03712    0.01517  -2.446  0.01493 *  
+PopDensity       0.20351    0.10585   1.923  0.05534 .  
+PercentBach      0.30154    0.03963   7.608 2.65e-13 ***
+AvgTuition       0.15321    0.05754   2.663  0.00811 ** 
+MaleFemaleRatio -0.09061    0.04781  -1.895  0.05889 .  
+Labor            0.20215    0.08112   2.492  0.01317 *  
+VCFirms          0.34662    0.08200   4.227 3.03e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1045 on 346 degrees of freedom
+Multiple R-squared:  0.5662,	Adjusted R-squared:  0.5549 
+F-statistic: 50.18 on 9 and 346 DF,  p-value: < 2.2e-16
+

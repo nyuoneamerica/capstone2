@@ -1,0 +1,46 @@
+---
+title: "Lat Long Mapping"
+author: "OneAmericaWorks"
+date: "November 24, 2018"
+output: html_document
+---
+#produces a cross walk of all uscities to MSA.
+
+```{r [packages, include=FALSE}
+library(sp)
+library(rgeos)
+library(geosphere)
+
+library(dplyr)
+library(sf)
+library(RANN)
+
+```
+
+```{r function}
+
+allcities <- read_csv('uscitiesv1.4.csv')
+xy <- allcities[,c(7,8)]
+spdf.all <- SpatialPointsDataFrame(coords = xy, data = allcities,
+                               proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
+
+#now map to a MSA
+MSAlatlong <- read_csv("MSAlatlong.csv")
+ab <- MSAlatlong[,c(3,4)]
+spdf.MSA <- SpatialPointsDataFrame(coords = ab, data = MSAlatlong,
+                               proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
+
+
+#can play with radius setting.  Current set at ~15 miles. 
+closest <- nn2(MSAlatlong[,3:4], allcities[,7:8], k = 1, searchtype = "radius", radius = .7)
+closest <- sapply(closest, cbind) %>% as_tibble
+
+#Finding the nearest neighbors
+cities <- cbind(allcities, closest)
+MSAlatlong$nn.idx <- seq.int(nrow(MSAlatlong))
+cities <- merge(cities, MSAlatlong, by="nn.idx")
+
+write.table(cities, "city_crosswalk.txt", sep=",") # explore to make sure this worked
+
+```
+

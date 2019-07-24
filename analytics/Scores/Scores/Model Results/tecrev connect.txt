@@ -1,0 +1,30 @@
+[1] "##########################"
+[1] "Multiple Linear Regression on Tech Revenue - Connectivity"
+[1] "##########################"
+
+Call:
+lm(formula = TecRev ~ Amazon + PopDensity + VCFirms + asai + 
+    densityscore + PC1_rev + PC2_rev + PC3_rev, data = connect2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.18700 -0.04209 -0.00933  0.02935  0.59180 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   0.125435   0.005953  21.073  < 2e-16 ***
+Amazon1       0.041607   0.014129   2.945  0.00345 ** 
+PopDensity    0.194952   0.075724   2.575  0.01045 *  
+VCFirms       0.204472   0.064923   3.149  0.00178 ** 
+asai          0.052455   0.044476   1.179  0.23905    
+densityscore  0.046445   0.067633   0.687  0.49272    
+PC1_rev      -0.005306   0.002109  -2.516  0.01234 *  
+PC2_rev       0.066770   0.003790  17.618  < 2e-16 ***
+PC3_rev       0.015331   0.003463   4.427 1.28e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.08102 on 347 degrees of freedom
+Multiple R-squared:  0.7386,	Adjusted R-squared:  0.7326 
+F-statistic: 122.6 on 8 and 347 DF,  p-value: < 2.2e-16
+

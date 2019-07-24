@@ -1,0 +1,52 @@
+State,Region,SubRegion
+AL,South,East South Central
+AK,West,Pacific
+AZ,West,Mountain
+AR,South,West South Central
+CA,West,Pacific
+CO,West,Mountain
+CT,Northeast,New England
+DE,South,South Atlantic
+FL,South,South Atlantic
+GA,South,South Atlantic
+HI,West,Pacific
+ID,West,Mountain
+IL,Midwest,East North Central
+IN,Midwest,East North Central
+IA,Midwest,West North Central
+KS,Midwest,West North Central
+KY,South,East South Central
+LA,South,West South Central
+ME,Northeast,New England
+MD,South,South Atlantic
+MA,Northeast,New England
+MI,Midwest,East North Central
+MN,Midwest,West North Central
+MS,South,East South Central
+MO,Midwest,West North Central
+MT,West,Mountain
+NE,Midwest,West North Central
+NV,West,Mountain
+NH,Northeast,New England
+NJ,Northeast,Middle Atlantic
+NM,West,Mountain
+NY,Northeast,Middle Atlantic
+NC,South,South Atlantic
+ND,Midwest,West North Central
+OH,Midwest,East North Central
+OK,South,West South Central
+OR,West,Pacific
+PA,Northeast,Middle Atlantic
+RI,Northeast,New England
+SC,South,South Atlantic
+SD,Midwest,West North Central
+TN,South,East South Central
+TX,South,West South Central
+UT,West,Mountain
+VT,Northeast,New England
+VA,South,South Atlantic
+WA,West,Pacific
+WV,South,South Atlantic
+WI,Midwest,East North Central
+WY,West,Mountain
+DC,South,South Atlantic

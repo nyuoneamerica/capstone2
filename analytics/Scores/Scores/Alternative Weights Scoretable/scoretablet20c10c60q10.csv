@@ -1,0 +1,357 @@
+MSA,talent_score,connect_score,cost_score,quality_score,finalscore
+"Sioux Falls, SD",50.22,51.49,85.08,62.74,95.00
+"Victoria, TX",28.52,46.50,90.85,66.41,93.03
+"Winston Salem, NC",47.85,53.76,85.37,41.51,90.71
+"Rapid City, SD",51.03,45.03,84.86,46.13,90.55
+"Pine Bluff, AR",32.74,41.91,89.68,40.48,87.33
+"Jacksonville, NC",39.47,35.11,88.85,28.03,85.23
+"Goldsboro, NC",25.82,23.05,95.00,29.78,85.09
+"Columbus, GA AL",39.34,55.38,81.77,37.80,82.74
+"Jackson, MS",53.03,56.69,77.00,35.87,82.38
+"Durham Chapel Hill, NC",60.79,59.54,73.32,38.77,82.22
+"Burlington, NC",35.55,31.69,85.21,43.16,81.72
+"Lawton, OK",43.08,42.15,79.45,46.85,80.67
+"Hattiesburg, MS",46.95,18.18,83.62,31.70,79.43
+"Muncie, IN",43.78,53.88,78.04,35.66,79.39
+"Terre Haute, IN",38.96,26.61,79.92,56.73,78.50
+"South Bend Mishawaka, IN",45.82,51.38,72.80,60.55,78.42
+"Mobile, AL",35.26,50.00,79.88,38.96,78.10
+"Dothan, AL",30.77,59.69,78.94,43.36,78.00
+"Charleston, WV",34.35,49.77,78.37,49.11,77.92
+"Decatur, AL",33.72,36.69,79.01,56.08,77.23
+"Lafayette West Lafayette, IN",56.43,35.26,73.39,44.36,76.94
+"Albuquerque, NM",53.51,59.38,69.45,49.29,76.86
+"Lexington Fayette, KY",56.69,56.56,68.37,51.45,76.71
+"Greenville, NC",48.18,42.38,79.51,13.35,76.22
+"Rocky Mount, NC",11.36,24.67,91.90,29.27,76.01
+"Johnson City, TN",38.44,44.58,76.83,45.20,75.93
+"Mansfield, OH",21.94,33.72,83.32,49.55,75.82
+"Auburn Opelika, AL",57.10,37.52,72.94,36.42,75.56
+"Owensboro, KY",29.17,23.39,82.46,48.79,75.46
+"Little Rock North Little Rock Conway, AR",52.08,56.16,69.17,49.91,75.46
+"Huntsville, AL",58.36,54.38,67.55,45.34,74.77
+"Valdosta, GA",34.96,41.07,77.31,45.60,74.52
+"Las Cruces, NM",49.09,27.12,77.06,31.91,74.35
+"Santa Fe, NM",53.76,38.44,69.28,56.91,74.15
+"Bloomington, IN",54.50,33.23,74.60,28.36,74.09
+"Gulfport Biloxi Pascagoula, MS",33.88,44.69,78.53,34.24,74.01
+"Fort Wayne, IN",45.37,53.15,71.22,46.09,73.91
+"Grand Forks, ND MN",54.62,33.07,71.69,43.88,73.72
+"Tucson, AZ",51.73,56.96,67.16,48.57,72.86
+"Cheyenne, WY",46.05,43.20,70.78,51.17,72.71
+"Jonesboro, AR",37.65,41.55,77.89,26.37,72.59
+"Farmington, NM",20.25,37.78,79.49,55.35,72.59
+"Greensboro High Point, NC",63.39,63.20,59.11,65.28,72.47
+"Bowling Green, KY",47.29,36.83,71.18,51.08,72.40
+"Columbia, MO",59.24,48.41,66.17,45.39,72.34
+"Odessa, TX",18.74,34.81,82.68,39.41,72.05
+"Hickory Lenoir Morganton, NC",59.54,60.95,62.90,48.45,71.68
+"Savannah, GA",43.43,55.64,66.96,61.45,71.64
+"Warner Robins, GA",42.50,50.80,69.09,54.98,71.56
+"Hot Springs, AR",32.39,30.77,81.23,21.97,71.48
+"Albany, GA",27.84,48.18,79.38,23.61,71.25
+"Gadsden, AL",16.24,52.55,78.50,47.47,71.21
+"Kokomo, IN",33.40,38.05,75.08,46.55,70.89
+"Flagstaff, AZ",50.00,58.21,66.66,43.31,70.81
+"Asheville, NC",44.69,46.84,72.29,30.86,70.69
+"Fayetteville, NC",38.31,47.85,75.27,23.15,70.38
+"Salt Lake City, UT",56.96,60.62,59.57,66.66,70.26
+"Montgomery, AL",47.73,44.46,67.86,50.09,69.97
+"Wilmington, NC",61.11,61.11,57.17,68.83,69.59
+"Clarksville, TN KY",37.25,32.05,73.52,45.77,69.24
+"St. Joseph, MO",36.69,30.19,72.05,57.05,69.14
+"Columbia, SC",54.13,52.91,65.62,36.78,68.90
+"Morgantown, WV",56.56,45.26,66.07,36.74,68.87
+"Joplin, MO",31.87,37.65,73.06,50.49,68.61
+"Jackson, TN",39.72,20.70,75.18,38.51,68.51
+"Parkersburg Vienna, WV",32.90,34.19,73.59,47.31,68.34
+"Tulsa, OK",65.18,63.02,53.12,76.64,68.33
+"Myrtle Beach Conway North Myrtle Beach, SC NC",35.41,53.39,72.40,27.24,67.75
+"Pocatello, ID",49.88,33.88,68.09,42.89,67.60
+"Augusta Richmond County, GA SC",42.85,40.83,72.24,24.93,67.57
+"Cumberland, MD WV",27.12,35.99,77.25,29.16,67.17
+"Fayetteville Springdale Rogers, AR MO",50.34,50.22,64.98,40.91,66.95
+"Greenville Anderson Mauldin, SC",63.02,63.77,52.00,79.33,66.83
+"Columbus, IN",45.71,35.55,66.23,54.64,66.42
+"St. George, UT",42.62,39.34,63.65,71.12,66.14
+"Yuma, AZ",27.60,32.39,75.76,34.50,65.96
+"Hagerstown Martinsburg, MD WV",30.96,27.60,72.77,50.48,65.95
+"Ogden Clearfield, UT",49.31,47.06,62.36,56.62,65.92
+"Cleveland, TN",25.26,56.30,72.30,35.66,65.89
+"Sumter, SC",26.61,32.90,74.34,43.88,65.84
+"Oklahoma City, OK",64.16,64.36,51.81,71.77,65.70
+"Florence, SC",28.95,39.60,73.14,37.90,65.49
+"Lansing East Lansing, MI",56.83,51.03,59.61,50.35,65.19
+"Wichita, KS",50.68,55.13,59.19,60.63,65.10
+"Spartanburg, SC",37.11,19.27,72.53,42.16,64.81
+"Chattanooga, TN GA",48.52,47.62,65.61,32.14,64.75
+"Saginaw, MI",31.69,39.97,68.19,57.96,64.74
+"Jefferson City, MO",45.94,24.05,67.48,47.83,64.38
+"New Orleans Metairie, LA",55.51,60.31,56.95,55.34,64.34
+"Spokane Spokane Valley, WA",49.43,53.27,57.93,67.70,64.14
+"Lafayette, LA",50.91,50.57,61.91,42.01,63.85
+"Louisville/Jefferson County, KY IN",63.20,65.18,50.46,71.26,63.80
+"Birmingham Hoover, AL",64.76,62.83,50.50,68.77,63.50
+"Kansas City, MO KS",71.65,67.23,45.94,77.00,63.32
+"Kalamazoo Portage, MI",54.38,38.31,64.39,29.66,63.30
+"Idaho Falls, ID",46.84,36.41,63.62,50.71,63.19
+"Muskegon, MI",23.05,29.38,73.38,46.04,63.05
+"Provo Orem, UT",56.03,50.45,57.45,51.42,62.44
+"Blacksburg Christiansburg Radford, VA",55.00,16.94,67.17,28.52,62.40
+"St. Louis, MO",68.26,69.09,45.34,80.70,62.38
+"Tuscaloosa, AL",48.30,27.84,62.49,57.13,62.02
+"Abilene, TX",44.12,43.43,61.12,55.86,61.57
+"Carson City, NV",39.85,42.73,62.30,57.89,61.55
+"Cincinnati, OH KY IN",69.38,67.73,45.27,75.87,61.53
+"Waterloo Cedar Falls, IA",46.27,32.57,61.98,55.90,61.31
+"Memphis, TN MS AR",63.58,69.38,48.73,63.51,61.22
+"Coeur d'Alene, ID",35.84,41.43,65.29,46.78,61.06
+"Elizabethtown Fort Knox, KY",29.38,22.69,75.04,19.84,61.04
+"Manhattan, KS",56.16,34.04,60.32,42.87,60.97
+"Bismarck, ND",52.79,25.54,60.83,54.96,60.95
+"Baton Rouge, LA",52.32,51.73,59.53,36.80,60.81
+"Indianapolis Carmel Anderson, IN",70.62,66.99,44.55,74.53,60.75
+"Lima, OH",25.54,38.70,72.65,23.18,60.52
+"Topeka, KS",46.50,21.94,63.63,51.70,60.43
+"Deltona Daytona Beach Ormond Beach, FL",51.38,54.88,56.79,49.89,60.41
+"Charlotte Concord Gastonia, NC SC",67.99,75.60,43.01,78.04,60.29
+"Dayton, OH",54.25,58.07,54.34,53.70,60.02
+"Rome, GA",24.36,37.11,70.01,40.14,59.97
+"Cedar Rapids, IA",49.20,53.64,55.27,61.39,59.77
+"Toledo, OH",47.62,43.55,56.91,63.53,59.53
+"Kingsport Bristol Bristol, TN VA",27.36,40.95,71.21,20.58,59.47
+"Niles Benton Harbor, MI",38.83,24.97,67.31,36.97,59.46
+"Amarillo, TX",43.66,47.96,59.50,48.83,59.01
+"Elkhart Goshen, IN",30.58,41.19,66.77,38.08,58.99
+"Raleigh, NC",72.02,70.95,41.81,74.28,58.82
+"Charleston North Charleston, SC",48.97,56.83,55.04,54.40,58.67
+"Boise City, ID",53.39,52.32,55.98,43.95,58.57
+"Detroit Warren Dearborn, MI",70.95,73.22,40.51,76.85,57.82
+"Knoxville, TN",65.39,61.95,45.82,67.07,57.75
+"Morristown, TN",9.83,41.67,72.78,36.61,57.74
+"Houma Thibodaux, LA",16.94,48.75,66.40,53.42,57.70
+"Tampa St. Petersburg Clearwater, FL",55.13,60.47,49.42,66.83,57.63
+"Ann Arbor, MI",61.61,58.50,49.01,57.20,57.42
+"Akron, OH",53.88,50.91,53.18,54.92,57.36
+"Tallahassee, FL",55.38,51.26,54.54,41.84,57.06
+"Tyler, TX",44.01,45.94,56.19,58.36,56.73
+"Killeen Temple, TX",37.78,45.71,59.12,53.32,56.70
+"Battle Creek, MI",30.19,19.77,67.54,42.84,56.48
+"Logan, UT ID",54.88,15.48,61.75,31.39,56.27
+"Dubuque, IA",42.73,25.26,60.35,54.25,56.26
+"Appleton, WI",46.61,56.43,51.95,65.65,56.24
+"Kennewick Richland, WA",47.51,37.92,57.53,48.52,56.17
+"Olympia Tumwater, WA",51.61,42.50,53.52,59.61,56.14
+"Jacksonville, FL",52.43,59.09,51.61,52.68,56.11
+"Prescott, AZ",38.57,11.36,66.48,38.39,56.01
+"Great Falls, MT",44.35,38.83,59.87,38.44,55.89
+"Sebastian Vero Beach, FL",39.97,54.13,55.27,59.07,55.80
+"Roanoke, VA",41.19,51.15,56.75,50.69,55.80
+"Gainesville, GA",35.70,40.09,60.36,51.03,55.79
+"Youngstown Warren Boardman, OH",34.50,29.17,63.77,43.40,55.70
+"Atlanta Sandy Springs Roswell, GA",74.10,79.71,37.41,71.38,55.61
+"Nashville Davidson  Murfreesboro  Franklin, TN",71.30,67.48,41.09,67.08,55.60
+"Shreveport Bossier City, LA",39.09,46.72,58.96,43.66,55.34
+"Lewiston, ID WA",41.31,29.58,59.45,53.24,55.30
+"Reno, NV",52.55,54.00,51.54,52.63,55.07
+"Billings, MT",48.75,45.48,54.20,52.01,54.91
+"Brunswick, GA",31.14,30.38,65.97,30.34,54.65
+"Virginia Beach Norfolk Newport News, VA",63.77,68.80,39.50,85.29,54.61
+"Lake Havasu City Kingman, AZ",5.00,14.63,77.76,27.02,54.53
+"Dover, DE",40.46,42.27,56.57,55.50,54.51
+"Canton Massillon, OH",35.99,43.32,57.70,55.88,54.36
+"Charlottesville, VA",58.79,49.43,49.89,50.87,54.33
+"Sioux City, IA",40.09,34.35,58.66,50.03,54.20
+"Michigan City La Porte, IN",31.33,30.96,62.83,45.84,54.18
+"Corpus Christi, TX",43.89,52.79,54.34,49.29,54.08
+"Corvallis, OR",60.31,42.03,50.41,50.77,54.07
+"Dallas Fort Worth Arlington, TX",80.65,78.11,32.65,80.44,54.05
+"Pensacola Ferry Pass Brent, FL",44.24,54.25,54.18,47.43,53.94
+"Portland Vancouver Hillsboro, OR WA",55.26,60.15,44.64,75.54,53.72
+"Lake Charles, LA",32.57,40.59,61.62,38.56,53.71
+"Oshkosh Neenah, WI",47.06,47.51,53.56,50.95,53.69
+"Fort Smith, AR OK",17.58,28.29,72.54,15.22,53.68
+"Laredo, TX",29.58,49.31,61.03,38.64,53.57
+"Grand Rapids Wyoming, MI",61.78,66.28,42.71,65.23,53.19
+"Monroe, LA",45.26,36.56,61.65,13.86,53.08
+"Lawrence, KS",59.84,30.58,52.23,46.13,52.88
+"Jackson, MI",35.11,46.95,57.10,49.37,52.75
+"Dalton, GA",15.48,26.09,69.90,32.39,52.69
+"Athens Clarke County, GA",58.21,40.71,55.56,17.69,52.56
+"Harrisonburg, VA",44.58,34.66,56.27,46.30,52.48
+"Macon Bibb County, GA",36.83,20.25,64.69,25.10,52.36
+"Longview, TX",33.23,21.54,65.07,28.51,52.33
+"Cleveland Elyria, OH",69.68,70.62,37.22,72.65,52.13
+"Missoula, MT",54.00,47.29,50.16,49.54,52.10
+"Flint, MI",34.81,49.65,58.85,33.31,52.08
+"Wausau, WI",37.92,48.86,50.70,76.17,51.96
+"Salem, OR",41.91,43.08,51.68,66.27,51.60
+"Ames, IA",60.95,35.41,51.01,37.87,51.20
+"Lakeland Winter Haven, FL",28.29,54.62,58.08,41.08,51.11
+"Erie, PA",42.15,45.60,51.53,61.46,51.07
+"Winchester, VA",38.70,35.70,54.14,61.75,50.91
+"Wheeling, OH",28.07,50.68,54.87,63.20,50.82
+"Lincoln, NE",57.65,54.50,45.15,57.34,50.58
+"Duluth, MN WI",43.55,53.51,52.27,43.75,50.57
+"Syracuse, NY",53.64,57.79,44.95,63.00,50.53
+"Omaha Council Bluffs, NE IA",64.56,64.76,37.71,75.86,50.18
+"Eugene, OR",48.86,45.37,50.14,51.90,50.15
+"Yakima, WA",28.74,26.87,59.61,53.83,50.15
+"Pueblo, CO",36.41,37.25,57.01,43.19,50.05
+"Richmond, VA",66.75,65.39,36.91,73.51,49.76
+"Hinesville, GA",12.62,9.83,74.03,14.59,49.75
+"Monroe, MI",24.67,38.18,60.77,41.31,49.68
+"Gainesville, FL",58.50,52.67,52.70,7.44,49.66
+"Fort Lauderdale, FL",60.47,74.10,39.29,62.39,49.62
+"Springfield, MO",51.49,52.20,46.98,55.94,49.59
+"Arlington Alexandria, VA",63.96,72.02,36.17,75.83,49.56
+"Beaumont Port Arthur, TX",44.46,31.14,53.97,48.64,49.50
+"Lynchburg, VA",37.52,18.74,61.41,30.25,49.49
+"Bellingham, WA",49.54,27.36,52.41,51.45,49.46
+"Iowa City, IA",59.69,25.82,52.68,30.71,49.40
+"Champaign Urbana, IL",58.94,48.30,45.24,54.14,49.36
+"North Port Sarasota Bradenton, FL",61.28,64.56,37.92,76.92,49.31
+"Eau Claire, WI",45.03,32.22,52.23,54.02,48.95
+"Columbus, OH",72.41,66.51,33.69,76.07,48.92
+"Milwaukee Waukesha West Allis, WI",66.99,67.99,34.26,81.67,48.85
+"El Paso, TX",45.60,58.94,49.87,38.65,48.62
+"Colorado Springs, CO",57.51,56.03,43.57,54.26,48.37
+"Medford, OR",40.71,40.22,51.71,53.27,48.06
+"Baltimore Columbia Towson, MD",75.60,70.30,29.56,86.07,48.02
+"Des Moines West Des Moines, IA",66.51,61.78,35.48,76.65,47.90
+"New Haven Milford, CT",58.07,59.84,40.96,62.42,47.86
+"Bakersfield, CA",32.22,48.97,53.24,50.62,47.73
+"Denver Aurora Lakewood, CO",78.87,75.07,28.04,80.50,47.35
+"Peoria, IL",43.20,47.73,48.26,57.80,47.35
+"Green Bay, WI",42.38,44.24,51.18,44.91,47.25
+"San Angelo, TX",40.83,44.12,50.44,52.34,47.21
+"Fargo, ND MN",55.90,48.64,43.50,58.27,47.00
+"Oxnard Thousand Oaks Ventura, CA",55.77,55.51,40.02,72.39,46.97
+"Bangor, ME",46.39,52.08,46.29,56.77,46.92
+"Grand Junction, CO",41.55,49.54,48.45,54.71,46.67
+"Fairbanks, AK",56.30,46.05,42.03,66.57,46.54
+"Rochester, NY",57.93,57.10,42.54,47.87,46.28
+"Lubbock, TX",51.96,51.85,46.45,41.06,46.18
+"Johnstown, PA",22.69,41.31,53.99,64.79,46.16
+"Wichita Falls, TX",43.32,41.79,49.98,46.72,46.08
+"College Station Bryan, TX",57.79,48.52,47.18,26.83,45.88
+"State College, PA",59.38,40.46,44.49,47.71,45.86
+"Ithaca, NY",64.36,46.27,41.95,46.10,45.64
+"Pittsburgh, PA",68.53,69.98,31.06,78.65,45.50
+"Mount Vernon Anacortes, WA",40.59,16.24,53.70,51.63,45.34
+"Alexandria, LA",29.79,36.97,58.93,20.85,45.29
+"Philadelphia Camden Wilmington, PA NJ DE MD",76.16,74.57,26.30,86.27,45.28
+"Minneapolis St. Paul Bloomington, MN WI",73.22,71.65,28.69,80.67,45.27
+"Los Angeles Long Beach Anaheim, CA",82.99,82.99,22.87,84.71,45.27
+"Waco, TX",52.67,39.85,46.90,43.98,45.21
+"Kingston, NY",47.96,28.74,46.96,63.97,45.17
+"Lancaster, PA",41.79,44.35,47.30,58.45,45.13
+"Santa Maria Santa Barbara, CA",52.91,58.79,39.04,71.16,45.09
+"Houston The Woodlands Sugar Land, TX",75.07,76.16,27.55,77.42,44.91
+"Santa Cruz Watsonville, CA",57.24,57.93,37.68,69.96,44.79
+"Punta Gorda, FL",33.56,49.20,50.66,46.61,44.49
+"Scranton Wilkes Barre Hazleton, PA",36.27,50.11,47.20,60.35,44.35
+"Fort Collins, CO",59.09,31.87,43.70,53.85,44.33
+"Vallejo Fairfield, CA",44.80,57.65,40.67,74.33,44.23
+"York Hanover, PA",39.60,37.38,46.77,68.30,44.22
+"Phoenix Mesa Scottsdale, AZ",69.09,73.65,30.68,68.46,44.00
+"Fond du Lac, WI",33.07,43.89,50.47,51.30,43.95
+"Racine, WI",40.95,17.58,54.04,40.40,43.94
+"Madison, WI",72.80,63.39,29.00,81.07,43.94
+"Miami Fort Lauderdale West Palm Beach, FL",67.73,78.87,26.02,92.99,43.81
+"Harrisburg Carlisle, PA",61.95,62.48,32.82,79.01,43.59
+"Rochester, MN",54.75,42.62,42.43,55.23,43.52
+"Williamsport, PA",24.97,45.82,50.67,61.40,43.37
+"Stockton Lodi, CA",34.66,55.77,44.77,67.47,43.37
+"Mankato North Mankato, MN",51.15,26.35,47.61,46.49,43.29
+"Lebanon, PA",26.87,45.14,50.14,60.82,43.24
+"La Crosse Onalaska, WI MN",47.17,21.13,49.71,46.27,43.14
+"Binghamton, NY",51.26,42.85,45.88,39.04,43.08
+"Seattle Tacoma Bellevue, WA",76.76,72.41,24.34,87.43,43.03
+"El Centro, CA",21.13,32.74,55.72,49.79,42.97
+"Huntington Ashland, WV KY OH",26.35,23.73,57.62,36.25,42.83
+"Bend Redmond, OR",47.40,44.01,43.01,61.38,42.79
+"Portland South Portland, ME",50.80,58.65,38.81,64.68,42.70
+"Riverside San Bernardino Ontario, CA",53.27,58.36,40.62,49.08,42.69
+"Chicago Naperville Elgin, IL IN WI",81.73,81.73,21.33,84.36,42.65
+"Bloomington, IL",57.37,47.17,39.19,59.68,42.50
+"Longview, WA",19.77,33.56,57.10,40.27,42.35
+"Bridgeport Stamford Norwalk, CT",78.11,68.26,23.18,91.48,42.17
+"Midland, TX",48.07,54.75,39.33,67.98,42.13
+"Albany Schenectady Troy, NY",77.41,62.65,26.55,78.02,42.13
+"Buffalo Cheektowaga Niagara Falls, NY",64.97,64.97,30.41,76.66,41.98
+"Merced, CA",41.67,39.09,50.37,28.01,41.71
+"Salisbury, MD",41.07,46.16,46.09,47.65,41.68
+"Hartford West Hartford East Hartford, CT",65.61,65.61,28.96,81.80,41.65
+"St. Cloud, MN",45.14,36.27,45.66,51.50,41.57
+"Panama City, FL",36.97,38.57,49.19,44.25,41.55
+"Sacramento  Roseville  Arden Arcade, CA",65.83,66.75,29.02,79.12,41.51
+"Salinas, CA",42.03,48.07,41.95,66.64,41.28
+"Davenport Moline Rock Island, IA IL",42.27,52.43,42.88,52.42,40.54
+"Pittsfield, MA",61.44,60.79,30.94,76.93,40.45
+"Redding, CA",32.05,43.66,47.11,52.92,39.88
+"Port St. Lucie, FL",60.62,62.30,32.24,65.42,39.70
+"San Luis Obispo Paso Robles Arroyo Grande, CA",50.11,39.72,39.71,64.02,39.66
+"Elmira, NY",37.38,44.92,48.02,33.62,39.50
+"McAllen Edinburg Mission, TX",26.09,57.37,51.76,20.97,39.44
+"Norwich New London, CT",51.85,55.26,36.91,60.54,39.41
+"Sheboygan, WI",38.05,38.96,44.12,61.13,39.41
+"Providence Warwick, RI MA",73.65,65.83,25.47,74.77,39.37
+"Austin Round Rock, TX",74.57,68.53,24.04,77.59,39.13
+"New York City, NY",89.35,95.00,11.68,95.00,38.99
+"Rockford, IL",39.22,42.97,43.34,57.18,38.96
+"Fresno, CA",60.15,61.61,33.33,56.52,38.92
+"Sherman Denison, TX",34.19,13.69,51.22,48.15,38.75
+"San Antonio New Braunfels, TX",52.20,60.00,36.07,56.78,38.75
+"Bay City, MI",23.73,31.51,54.63,30.49,38.69
+"Greeley, CO",45.48,29.99,43.56,54.89,38.68
+"Reading, PA",40.34,46.61,41.21,62.09,38.58
+"Altoona, PA",20.70,34.96,50.77,54.21,38.29
+"Las Vegas Henderson Paradise, NV",62.65,76.76,25.96,75.60,37.94
+"Washington, DC",86.49,80.65,14.70,91.21,37.86
+"Utica Rome, NY",36.13,28.52,46.33,52.79,37.57
+"San Francisco Oakland Hayward, CA",66.05,77.41,21.90,89.04,37.26
+"San Jose Sunnyvale Santa Clara, CA",70.30,69.68,22.88,81.50,37.09
+"Evansville, IN KY",36.56,46.39,44.87,39.53,36.93
+"Ocala, FL",14.63,12.62,60.18,25.00,36.87
+"Boulder, CO",62.12,51.96,32.38,57.24,36.83
+"Springfield, OH",50.57,55.90,35.57,56.68,36.71
+"Santa Rosa, CA",49.77,49.88,35.65,63.66,36.69
+"Lewiston Auburn, ME",23.39,44.80,45.40,61.66,36.42
+"Chico, CA",44.92,34.50,43.86,36.51,36.10
+"Orlando Kissimmee Sanford, FL",68.80,72.80,23.57,70.20,35.71
+"Cape Girardeau, MO IL",46.16,28.07,43.53,38.33,35.29
+"Bremerton Silverdale, WA",49.65,40.34,37.17,55.89,35.03
+"Hanford Corcoran, CA",34.04,5.00,53.14,24.77,34.66
+"Decatur, IL",30.38,35.84,45.10,48.89,34.56
+"Kankakee, IL",29.99,39.22,41.48,64.69,33.90
+"Crestview Fort Walton Beach Destin, FL",48.41,51.61,35.07,53.02,33.73
+"Newark, NJ",79.71,86.49,15.18,71.41,33.05
+"Anchorage, AK",62.30,62.12,22.55,82.36,32.26
+"Allentown Bethlehem Easton, PA NJ",67.23,64.16,19.83,85.71,32.06
+"Napa, CA",46.72,55.00,31.15,66.91,31.85
+"Glens Falls, NY",38.18,24.36,41.97,49.59,31.82
+"Cape Coral Fort Myers, FL",42.97,59.24,35.12,45.94,31.77
+"Burlington South Burlington, VT",58.65,50.34,29.61,55.67,31.60
+"Brownsville Harlingen, TX",22.32,57.24,48.81,5.05,31.37
+"Barnstable Town, MA",53.15,36.13,32.54,61.96,31.34
+"Visalia Porterville, CA",19.27,28.95,47.39,47.76,31.32
+"Trenton, NJ",67.48,66.05,17.47,92.38,31.05
+"Worcester, MA",62.48,63.96,19.71,88.49,30.55
+"Jersey City Hoboken, NJ",95.00,89.35,5.00,84.34,30.17
+"Casper, WY",41.43,7.85,44.04,37.91,30.01
+"Danville, IL",13.69,29.79,46.94,53.46,29.89
+"San Diego Carlsbad, CA",69.98,71.30,16.56,78.93,29.36
+"Springfield, MA",62.83,61.28,19.69,84.20,29.31
+"Boston Cambridge Newton, MA NH",84.52,84.52,7.45,90.08,29.13
+"Florence Muscle Shoals, AL",31.51,22.32,49.59,5.00,29.04
+"Atlantic City Hammonton, NJ",60.00,61.44,19.72,84.96,28.42
+"Springfield, IL",50.45,43.78,28.37,66.51,27.77
+"Manchester Nashua, NH",66.28,63.58,17.25,81.59,27.73
+"Ocean City, NJ",40.22,49.09,29.06,69.77,26.25
+"Naples Immokalee Marco Island, FL",48.64,53.03,31.04,35.78,25.99
+"Madera, CA",7.85,33.40,47.20,33.07,24.64
+"Yuba City, CA",21.54,31.33,35.03,44.73,17.58
+"Palm Bay Melbourne Titusville, FL",55.64,47.40,22.75,30.56,16.88
+"Vineland Bridgeton, NJ",18.18,39.47,30.62,58.52,15.38
+"Modesto, CA",24.05,57.51,21.17,32.38,5.00

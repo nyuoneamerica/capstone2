@@ -1,0 +1,3 @@
+pip install eiapy
+
+https://github.com/systemcatch/eiapy

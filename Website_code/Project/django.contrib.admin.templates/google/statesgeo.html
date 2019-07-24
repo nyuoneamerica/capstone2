@@ -1,0 +1,120 @@
+
+<html>
+        <head>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', {
+              'packages':['geochart'],
+              'mapsApiKey': 'AIzaSyC1R-o3SRuU3mDj-Iyj3cYmPZce_FXFg4o'
+            });
+            google.charts.setOnLoadCallback(drawVisualization);
+              // States
+              function drawVisualization() {
+              var data = google.visualization.arrayToDataTable([
+                ['State','Population'],
+                ['Alabama',0],
+                ['Alaska',1],
+                ['Arizona',2],
+                ['Arkansas',1],
+                ['California',0],
+                ['Colorado',1],
+                ['Connecticut',2],
+                ['Delaware',1],
+                ['Florida',0],
+                ['Georgia',1],
+                ['Hawaii',2],
+                ['Idaho',1],
+                ['Illinois',0],
+                ['Indiana',2],
+                ['Iowa',0],
+                ['Kansas',2],
+                ['Kentucky',0],
+                ['Louisiana',2],
+                ['Maine',0],
+                ['Maryland',0],
+                ['Massachusetts',1],
+                ['Michigan',2],
+                ['Minnesota',2],
+                ['Mississippi',0],
+                ['Missouri',0],
+                ['Montana',1],
+                ['Nebraska',2],
+                ['Nevada',2],
+                ['New Hampshire',0],
+                ['New Jersey',1],
+                ['New Mexico',0],
+                ['New York',1],
+                ['North Carolina',2],
+                ['North Dakota',1],
+                ['Ohio',1],
+                ['Oklahoma',0],
+                ['Oregon',1],
+                ['Pennsylvania',1],
+                ['Rhode Island',0],
+                ['South Carolina',0],
+                ['South Dakota',1],
+                ['Tennessee',1],
+                ['Texas',2],
+                ['Utah',2],
+                ['Vermont',0],
+                ['Virginia',1],
+                ['Washington',0],
+                ['West Virginia',1],
+                ['Wisconsin',2],
+                ['Wyoming',1]
+              ]);
+              var options = {
+                width: 556,
+                height: 347, 
+                region: "US",
+                resolution: "provinces",
+                colorAxis:{
+                colors:['pink','yellow','orange'],
+                minValue: 0,
+                maxValue:2}
+
+              };
+              
+      
+        var geochart = new google.visualization.GeoChart(
+            document.getElementById('visualization'));
+        geochart.draw(data,options);
+      }
+            
+
+//             function drawVisualization() {
+//   var geoData= new google.visualization.DataTable();
+//   geoData.addRows(2);
+//   geoData.addColumn('string', 'State');
+//   geoData.addColumn('number', 'Votes (%)');
+
+//   geoData.setValue(0, 0, 'Alabama');
+//   geoData.setValue(0, 1, 0);
+//   geoData.setFormattedValue(0, 1, '56%');
+
+//   geoData.setValue(1, 0, 'Maine');
+//   geoData.setValue(1, 1, 1);
+//   geoData.setFormattedValue(1, 1, '64%');
+
+//   var options = {};
+//   options['region'] = 'US';
+//   options['resolution'] = 'provinces';
+//   options['colorAxis'] = { minValue : 0, maxValue : 1, colors : ['#FF0000','#0000FF']};
+//   options['backgroundColor'] = '#FFFFFF';
+//   options['datalessRegionColor'] = '#E5E5E5';
+//   options['width'] = 556;
+//   options['height'] = 347;
+//   options['legend'] = 'none';
+
+//   var geochart = new google.visualization.GeoChart(
+//       document.getElementById('visualization'));
+//   geochart.draw(geoData, options);
+// } 
+          </script>
+        </head>
+        <body>
+          <div id="visualization" style="width: 900px; height: 500px;"></div>
+        </body>
+      </html>
+
+

@@ -1,0 +1,20 @@
+GEO.id,Id
+GEO.id2,Id2
+GEO.display-label,Geography
+GC.target-geo-id,Target Geo Id
+GC.target-geo-id2,Target Geo Id2
+GC.display-label,Geography,GC.display-label
+popchg4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Total Population Change [1]"
+natinc4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Natural Increase"
+births4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Vital Events - Births"
+deaths4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Vital Events - Deaths"
+netmig4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Net Migration - Total"
+intlmig4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Net Migration - International [2]"
+dommig4201072017,"Cumulative Estimates of the Components of Population Change - April 1, 2010 to July 1, 2017 - Net Migration - Domestic"
+popchg20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Total Population Change [1]"
+natinc20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Natural Increase"
+births20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Vital Events - Births"
+deaths20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Vital Events - Deaths"
+netmig20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Net Migration - Total"
+intlmig20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Net Migration - International [2]"
+dommig20162017,"Annual Estimates of the Components of Population Change - July 1, 2016 to July 1, 2017 - Net Migration - Domestic"

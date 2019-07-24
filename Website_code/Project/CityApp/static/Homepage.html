@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- No Copyright -->
+  <title>City Project</title>
+  <meta charset="utf-8">
+      <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+   .button {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+	  margin:auto;
+	  white-space: nowrap;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5l;
+  }
+   footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+     
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  } 
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+div.ex1 {
+margin-left: calc(50% - 50vw);
+  width: 100vw;
+ }
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://3.208.4.11:8080/home">HOME</a></li>
+        <li><a href="http://3.208.4.11:8080/analytics">Analytics</a></li>
+        <li><a href="http://3.208.4.11:8080/source">Data Sources</a></li>
+        <li><a href="#band">About US</a></li>
+        <!-- <li class="dropdown"> -->
+          <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE -->
+          <!-- <span class="caret"></span></a> -->
+          <!-- <ul class="dropdown-menu"> -->
+            <!-- <li><a href="#">All MSA</a></li> -->
+         <!-- </ul> -->
+        <!-- </li> -->
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="{{ MEDIA_URL }}new_york.jpg" alt="New York" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="{{ MEDIA_URL }}Austin Round Rock.jpg" alt="Austin" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Austin</h3>
+          <p>The Round Rock, a large stone in Brushy Creek!</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="{{ MEDIA_URL }}Denver Aurora Lakewood.jpg" alt="Denver" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Denver Aurora Lakewood</h3>
+          <p>The 17th most populous primary statistical area of the United States.</p>
+        </div>      
+      </div>
+        <div class="item">
+          <img src="{{ MEDIA_URL }}pittsburgh.jpg" alt="Pittsburgh" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>Pittsburgh</h3>
+            <p>An early-20th-century industrial capita.</p>
+          </div>   
+        </div>     
+        <div class="item">
+            <img src="{{ MEDIA_URL }}San Francisco.jpg" alt="San Francisco" width="1200" height="700">
+            <div class="carousel-caption">
+            <h3>San Francisco</h3>
+            <p>A year-round fog, iconic Golden Gate Bridge, cable cars and colorful Victorian houses.</p>
+            </div>      
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Details Section) -->
+<div id="band" class="container text-center">
+  <h3>About US</h3>
+  <p>Find out where to expand your next Technology Startup in Middle America.We provide data driven decision making tools to companies, to expand their business througout America,
+make decisions based on multi dimensional city data.We have created a fictional city details website. We provide various parameters of a city to view in a easy maner. If you have a city in mind we can also show you whats out there and also suggest other cities "Similar" using cluster analysis.</p>
+  <br>
+  <!-- <div class="row align-center" > -->
+        <!-- <div class="tab" > -->
+                <!-- <button class="tablinks" onclick="openCity('http://45.35.64.128:8000/home', 'Top10')">Top 5</button> -->
+                <!-- <button class="tablinks" onclick="openCity('Homepage2.html', 'All MSA')">All MSA</button> -->
+				<!-- <button class="tablinks" onclick="openCity('http://45.35.64.128:8000/home#graphDiv','All MSA')">All MSA</button> -->
+                <!-- <button class="tablinks" onclick="openCity('charts.html', 'Charts')">Charts</button> -->
+              <!-- </div> -->
+              
+              <!-- <div id="Top 10" class="tabcontent"> -->
+                <!-- <h3>Top 5</h3> -->
+                <!-- <p>Top 5 MSA of USA.</p> -->
+              <!-- </div> -->
+              
+              <!-- <div id="All MSA" class="tabcontent"> -->
+                <!-- <h3>All MSA</h3> -->
+                <!-- <p>All MSA in USA.</p>  -->
+              <!-- </div> -->
+              
+              <!-- <div id="Charts" class="tabcontent"> -->
+                <!-- <h3>Charts</h3> -->
+                <!-- <p>Charts representation of data.</p> -->
+              <!-- </div> -->
+<!-- </div> -->
+<script>
+function onSelectChange(val){
+      console.log(val);     
+     // console.log('selected event', val.target.selectedOptions[0].innerText);
+  //    params = val.target.selectedOptions[0].innerText;
+  localStorage.setItem('city',val);
+      var http = new XMLHttpRequest();
+  var url = 'http://3.208.4.11:8080/msadetails?NAME='+ val;
+//  var data = params ;
+  http.open('GET', url, true);
+  http.withCredentials = true;
+http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  //Send the proper header information along with the request
+//http.setRequestHeader('content-type', 'application/json');
+//http.setRequestHeader('content-type', 'json');
+//http.setRequestHeader('Content-type','text/html');
+ // http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.setRequestHeader("Access-Control-Allow-Origin","*");
+
+http.setRequestHeader("Access-Control-Allow-Credentials", "true");
+http.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+http.setRequestHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
+
+
+  http.onreadystatechange = function() {//Call a function when the state changes.
+      if(http.readyState == 4 && http.status == 200) {
+        //alert(http.responseText);
+      window.location="details.html?city="+val;
+
+      }
+  }
+  http.send(val)
+}
+
+  function openCity(url, Top10) {
+    window.location = url;
+    // var i, tabcontent, tablinks;
+    // tabcontent = document.getElementsByClassName("tabcontent");
+    // for (i = 0; i < tabcontent.length; i++) {
+    //   tabcontent[i].style.display = "none";
+    // }
+    // tablinks = document.getElementsByClassName("tablinks");
+    // for (i = 0; i < tablinks.length; i++) {
+    //   tablinks[i].className = tablinks[i].className.replace(" active", "");
+    // }
+    // document.getElementById(cityName).style.display = "block";
+    // evt.currentTarget.className += " active";
+  }
+  
+   <!-- function onSelect(A,B,C,D){ -->
+		<!-- console.log(A); -->
+		<!-- console.log(B); -->
+		<!-- console.log(C); -->
+		<!-- console.log(D); -->
+		<!-- console.log('selected event', val.target.selectedOptions[0].innerText); -->
+		<!-- params = val.target.selectedOptions[0].innerText; -->
+		<!-- localStorage.setItem('city',A); -->
+		<!-- localStorage.setItem('Age',B); -->
+		<!-- localStorage.setItem('Tax',C); -->
+		<!-- localStorage.setItem('GDP',D); -->
+		<!-- var http = new XMLHttpRequest(); -->
+		<!-- var url = 'http://45.35.64.128:8000/kmeansmodel?MSA=&AGE2034=&AvgPropTaxPerCap=&GDPperCap='+A+B+C+D; -->
+		<!-- var data = params ; -->
+		<!-- http.open('GET', url, true); -->
+
+		<!-- Send the proper header information along with the request -->
+		<!-- http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); -->
+
+		<!-- http.onreadystatechange = function() { -->
+		<!-- Call a function when the state changes. -->
+		<!-- if(http.readyState == 4 && http.status == 200) { -->
+		<!-- alert(http.responseText); -->
+		     <!-- window.location="C:/CityProject/templates/details.html" ; -->
+		<!-- window.location="details.html" ; -->
+
+      <!-- } -->
+  <!-- } -->
+  <!-- http.send(A,B,C,D) -->
+ <!-- } -->
+<!-- Plotly.d3.csv('https://raw.githubusercontent.com/abachoudhary/cityamericadata/master/data/Map_Msadata.csv', function(err, rows){ -->
+  
+  <!-- var classArray = unpack(rows, 'class'); -->
+
+  <!-- var msa = unpack(rows, 'name');  -->
+<!-- var classes = [...new Set(classArray)]; -->
+   
+  <!-- function unpack(rows, key) { -->
+    <!-- return rows.map(function(row) { return row[key]; }); -->
+  <!-- } -->
+ 
+  <!-- var data =[{type: 'scattermapbox', -->
+       <!-- lat: unpack(rows, 'reclat'), -->
+       <!-- lon: unpack(rows, 'reclong'), -->
+       <!-- mode:'markers', -->
+       <!-- marker: {  color: 'rgb(255, 127, 14)',size:10 }, -->
+       <!-- text: msa, -->
+      <!-- // hoverinfo: 'Population' -->
+   <!-- }] -->
+
+  <!-- var layout = { -->
+     <!-- title: 'MSA Landing Locations', -->
+     
+     <!-- font: { -->
+         <!-- color: 'white' -->
+     <!-- }, -->
+    <!-- dragmode: 'zoom',  -->
+    
+    <!-- mapbox: { -->
+      <!-- center: { -->
+        <!-- lat: 38.03697222,  -->
+        <!-- lon: -90.70916722 -->
+      <!-- },  -->
+      <!-- domain: { -->
+        <!-- x: [0, 1],  -->
+        <!-- y: [0, 1] -->
+      <!-- },  -->
+      <!-- style: 'dark',  -->
+      <!-- zoom: 3 -->
+    <!-- },  -->
+    <!-- margin: { -->
+      <!-- r: 20,  -->
+      <!-- t: 40,  -->
+      <!-- b: 20,  -->
+      <!-- l: 20,  -->
+      <!-- pad: 0 -->
+    <!-- },  -->
+    <!-- paper_bgcolor: '#191A1A',  -->
+    <!-- plot_bgcolor: '#191A1A',  -->
+    <!-- showlegend: true, -->
+     <!-- annotations: [{ -->
+         <!-- x: 0, -->
+       <!-- y: 0, -->
+       <!-- xref: 'paper', -->
+       <!-- yref: 'paper', -->
+            <!-- text: 'Source: <a href="http:45.35.64.128:8000/home" style="color: rgb(255,255,255)">CityAmerica</a>', -->
+         <!-- showarrow: false -->
+     <!-- }] -->
+  <!-- }; -->
+  
+  <!-- Plotly.setPlotConfig({ -->
+    <!-- mapboxAccessToken: 'pk.eyJ1IjoiZXRwaW5hcmQiLCJhIjoiY2luMHIzdHE0MGFxNXVubTRxczZ2YmUxaCJ9.hwWZful0U2CQxit4ItNsiQ' -->
+  <!-- }); -->
+  
+  <!-- Plotly.plot('graphDiv', data, layout, {showSendToCloud: true}); -->
+<!-- }); 	   -->
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})  
+ </script>
+  <div class="container-fluid bg-3 text-center align-center">
+    <h3>Top Five MSA</h3>
+    <div class="row align-center">
+	<div class="col-sm align-center">
+	    <div class="col-sm-2">
+		<!-- <p><button class="button" style="vertical-align:middle" onclick='onSelect("New York Newark Jersey City,NY NJ PA","45","2000","12000")'><span>New York</span></button></p> -->
+        <p><button class="button" style="vertical-align:middle" onclick='onSelectChange("New-York-City-NY")'><span>New York</span></button></p>
+        <img src="{{ MEDIA_URL }}new_york.jpg" class="img-responsive" width="100%" alt="New York">
+      </div>
+	</div>  
+	<div class="col-sm">
+	  <div class="col-sm-2">
+          <!-- <p><button class="button" style="vertical-align:middle" onclick='onSelect("Pittsburgh,PA","50","4500","17000")'><span>Pittsburgh</span></button></p>   -->
+		  <p><button class="button" style="vertical-align:middle" onclick='onSelectChange("Los-Angeles-Long-Beach-Anaheim-CA")'><span>Los Angeles</span></button></p>
+          <img src="{{ MEDIA_URL }}Los Angeles Long Beach Anaheim,CA.jpg" class="img-responsive" width="100%"  alt="Los Angeles">
+      </div>
+	</div>
+	<div class="col-sm">	
+      <div class="col-sm-2">
+          <!-- <p><button class="button" style="vertical-align:middle" onclick='onSelect("San Francisco Oakland Hayward","34","6000","15000")'><span>San Francisco</span></button></p>         -->
+		  <p><button class="button" style="vertical-align:middle" onclick='onSelectChange("San-Francisco-Oakland-Hayward-CA")'><span>San Francisco</span></button></p>
+        <img src="{{ MEDIA_URL }}San Francisco.jpg" class="img-responsive" width="100%"  alt="San Francisco">
+      </div>
+	</div>
+	<div class="col-sm">
+      <div class="col-sm-2">
+          <!-- <p><button class="button" style="vertical-align:middle" onclick='onSelect("Pittsburgh,PA","50","4500","17000")'><span>Pittsburgh</span></button></p>   -->
+		  <p><button class="button" style="vertical-align:middle" onclick='onSelectChange("Pittsburgh-PA")'><span>Pittsburgh</span></button></p>
+          <img src="{{ MEDIA_URL }}pittsburgh.jpg" class="img-responsive" width="100%"  alt="Pittsburgh">
+      </div>
+	</div> 
+	<div class="col-sm">	
+      <div class="col-sm-2">
+          <!-- <p><button class="button" style="vertical-align:middle" onclick='onSelect("Austin Round Rock,TX","56","6700","19000")'><span>Austin</span></button></p>   -->
+		  <p><button class="button" style="vertical-align:middle" onclick='onSelectChange("Austin-Round-Rock-TX")'><span>Austin</span></button></p> 
+        <img src="{{ MEDIA_URL }}Austin Round Rock.jpg" class="img-responsive"  width="100%"  alt="Austin">
+      </div>
+	</div>  
+    </div>
+  </div>
+  <br>
+<!-- Image of location/map -->
+<!--<img src="{{ MEDIA_URL }}nj-largemap.png" class="img-responsive" style="width:50%"> -->
+<!-- <div id="graphDiv" class = "ex1"></div> -->
+<!-- <br><br> -->
+
+ <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home1">Company</a></li>
+      <li><a data-toggle="tab" href="#menu1">Talent</a></li>
+      <li><a data-toggle="tab" href="#menu2">City Planner</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="home1" class="tab-pane fade in active">
+        <h2>Company View</h2>
+		<p>The deliverables are geared toward a company deciding where to expand operations.  The associated analytics are the KNN Nearest Neighbor recommendation engine, text mining techniques to produce relevant news stories and word clouds, and time series analysis informing on the economic trends in the location of interest.</p>
+		<a href = "https://public.tableau.com/profile/nyu.one.america#!/vizhome/Book3_8957/CityViewHomepage">Company View</a>
+        <ul style="text-align: left">
+          <h2>Tableau Charts</h2>
+          <li><a href="https://public.tableau.com/profile/nyu.one.america#!/vizhome/FactorsinFavororNot2/FavorTech">Factors
+              that Favor Tech Hub Citites</a> </li>
+          <li><a href="https://public.tableau.com/profile/nyu.one.america#!/vizhome/Stats_Charts/PricetoIncomebyCity">Price
+              to Income by City</a></li>
+        </ul>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <h2>Talent Specific</h2>
+		<p>The deliverables are geared toward technically capable workers looking for promising career opportunities. The associated deliverable is in the form of data visualization targeted towards individuals pursuing education and career opportunities.</p>
+		<!-- <div style="text-align: left">A few examples of visualization for job seekers can include:</div> -->
+		<ul style="text-align: left">
+		A few examples of visualization for job seekers can include:
+		<li>Top 10 cities by category by industry type</li>
+		<li>Top 10 cities by category by region</li>
+		<li>Ten similar cities by category when a specific city is selected</li>
+		<li>Top industries within a region</li>
+		<li>Top industries for a specific city selected</li>
+		</ul>
+
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <h2>Citywise Data </h2>
+		<p>The deliverables are geared toward a city trying to attract new business and talent to their locale.  The associated analytic utilizes the results of multiple regression to inform on which variables change would have the most impact on a city becoming a tech hub</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  
+</footer>
+</body>
+</html>

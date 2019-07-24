@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Drawing chart</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  </script>
+
+  </head>
+<body>
+<h1>Drawing chart</h1><h1>
+    Bar Cart
+</h1>
+  
+<script>
+        var w = 300;
+        var h = 100;
+        var padding = 2;
+var rate = [26,28,33,34,36,4,42,36,33];
+        var svg = d3.select("body").append("svg")
+        .attr("width",w)
+        .attr("height",h);
+      svg.selectAll("rect")
+      .data(rate)
+      .enter()
+      .append("rect")
+      .attr("x",function(d,i){
+      return i *(w / rate.length);
+})
+.attr("y",function(d){
+return h - (d);
+})
+.attr("width",w / rate.length - padding)
+.attr("height", function(d){return d;
+});
+</script>
+</body>
+</html>

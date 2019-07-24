@@ -1,0 +1,47 @@
+<html>
+  <head>
+          
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    // Load the Visualization API and the piechart package.
+    google.charts.load('current', {'packages':['corechart']});
+      
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawSheetName);
+
+
+function drawSheetName() {
+    var queryString = encodeURIComponent('SELECT MSA,Population,Land_Area,PopDensity LIMIT 5 OFFSET 8');
+
+    var query = new google.visualization.Query(
+     // tqUrl + queryString);
+       'https://docs.google.com/spreadsheets/d/1m34sUzxBi_XQDzhnMH3sUL8Tzv92e93HoFIzjky6GO0/edit?usp=sharing' + queryString);
+    query.send(handleSampleDataQueryResponse);
+  }
+
+  function handleSampleDataQueryResponse(response) {
+    if (response.isError()) {
+      alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+      return;
+    }
+
+    var data = response.getDataTable();
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    chart.draw(data, { height: 400 });
+  }
+</script>
+  </head>
+
+  <body>
+    
+      <button id="authorize-button" style="visibility: hidden">Authorize</button>
+      <script src="./demo.js" type="text/javascript"></script>
+      <script src="https://apis.google.com/js/auth.js?onload=init"></script>
+
+    <div id="chart_div"></div>
+
+  </body>
+</html>

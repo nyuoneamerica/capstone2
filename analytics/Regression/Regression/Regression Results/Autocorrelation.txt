@@ -1,0 +1,7 @@
+[1] "###########################################################"
+[1] "Durbin Watson Stat of 1.934964 indicated no AutoCorrelation"
+[1] "###########################################################"
+
+lag Autocorrelation D-W Statistic p-value
+   1      0.03250539      1.934964    0.52
+ Alternative hypothesis: rho != 0

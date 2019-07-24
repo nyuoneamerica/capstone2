@@ -1,0 +1,44 @@
+<html>
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<!-- Plotly chart will be drawn inside this DIV -->
+<div id="myDiv"></div>
+  <script>
+  /* JAVASCRIPT CODE GOES HERE */
+  var data = [{
+  type:'scattermapbox',
+  lat:['45.5017'],
+  lon:['-73.5673'],
+  mode:'markers',
+  text: ['Montreal'],
+  text:['<a href="https://plot.ly/">Link to plotly</a>'],
+  marker: {  color: 'rgb(255, 127, 14)',size:20 },  
+  text:['<a href="https://google.com">Link to google</a>'],
+ }]
+
+var layout = {
+  autosize: true,
+  hovermode:'closest',
+  mapbox: {
+    bearing:0,
+    center: {
+      lat:45,
+      lon:-73
+    },
+    pitch:0,
+    zoom:5
+  },
+}
+
+Plotly.setPlotConfig({
+  mapboxAccessToken: 'pk.eyJ1IjoiZXRwaW5hcmQiLCJhIjoiY2luMHIzdHE0MGFxNXVubTRxczZ2YmUxaCJ9.hwWZful0U2CQxit4ItNsiQ'
+})
+
+Plotly.plot('myDiv', data, layout, {showSendToCloud: true})
+  </script>
+</div>
+</body>
+</html>

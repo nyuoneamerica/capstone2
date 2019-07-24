@@ -1,0 +1,8 @@
+[1] "###################################"
+[1] "VIFs indicates no Mutlicollinearity"
+[1] "###################################"
+
+            PC1             PC2      NumAirline             GDP     PovertyRate      CorpTaxMax        GDP5Year MaleFemaleRatio 
+         1.3216          2.6711          1.3766          3.7417          1.3710          1.0492          1.1585          1.0902 
+      GDPperCap 
+         2.2050

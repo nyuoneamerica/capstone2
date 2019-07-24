@@ -1,0 +1,31 @@
+[1] "##########################"
+[1] "Multiple Linear Regression Final"
+[1] "##########################"
+
+Call:
+lm(formula = RevPerCap0 ~ PC1 + PC2 + NumAirline + GDP + PovertyRate + 
+    CorpTaxMax + GDP5Year + MaleFemaleRatio + GDPperCap, data = model_data2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.54475 -0.06683 -0.00302  0.07575  0.44063 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      4.301154   0.407268  10.561  < 2e-16 ***
+PC1             -0.075882   0.003929 -19.312  < 2e-16 ***
+PC2              0.070630   0.007411   9.530  < 2e-16 ***
+NumAirline       0.014500   0.003138   4.620 5.44e-06 ***
+GDP             -0.002247   0.022784  -0.099 0.921502    
+PovertyRate     -1.119352   0.189231  -5.915 8.06e-09 ***
+CorpTaxMax       0.788177   0.355580   2.217 0.027310 *  
+GDP5Year        -1.330600   0.369423  -3.602 0.000363 ***
+MaleFemaleRatio -0.008578   0.001641  -5.227 3.01e-07 ***
+GDPperCap        9.568904   0.742098  12.894  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1236 on 341 degrees of freedom
+Multiple R-squared:  0.828,	Adjusted R-squared:  0.8235 
+F-statistic: 182.5 on 9 and 341 DF,  p-value: < 2.2e-16
+

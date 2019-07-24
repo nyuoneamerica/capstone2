@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    // Load the Visualization API and the piechart package.
+    google.charts.load('current', {'packages':['geochart'],'mapsApiKey': 'AIzaSyC1R-o3SRuU3mDj-Iyj3cYmPZce_FXFg4o'});
+      
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+      
+    function drawChart() {
+      var jsonData = $.ajax({
+          url: "http://127.0.0.1:8000/getmsa",
+          dataType: "json",
+          async: false
+          }).responseText;
+          
+      // Create our data table out of JSON data loaded from server.
+      var data = new google.visualization.DataTable(jsonData);
+
+      //Instantiate and draw our chart, passing in some options.
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, {displayMode: 'markers',width: 900, height: 500,region: "US", resolution: "provinces"});
+
+    //   var geochart = new google.visualization.GeoChart(
+    //       document.getElementById('MSA'));
+    //     geochart.draw(data, {displayMode: 'markers',width: 556, height: 347, region: "US", resolution: "provinces"});
+    }
+
+    </script>
+  </head>
+
+  <body>
+    <!--Div that will hold the geo chart-->
+    <div id="chart_div"style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

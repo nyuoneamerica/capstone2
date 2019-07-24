@@ -1,0 +1,36 @@
+[1] "##########################"
+[1] "Multiple Linear Regression on Tech Revenue - Cost"
+[1] "##########################"
+
+Call:
+lm(formula = TecRev ~ Amazon + GDP + AvgPropTaxPerCap + PopDensity + 
+    MedianIncome + PropPricetoIncomeRatio + AvgSchoolRep + CorpTaxMax + 
+    GDP5Year + GDPperCap + PC1_rev + PC2_rev + PC3_rev, data = cost2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.18639 -0.04052 -0.00344  0.02968  0.53029 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)             0.107914   0.024259   4.448 1.17e-05 ***
+Amazon1                 0.031727   0.012921   2.455  0.01457 *  
+GDP                     0.130955   0.063152   2.074  0.03886 *  
+AvgPropTaxPerCap        0.010469   0.021573   0.485  0.62780    
+PopDensity              0.112984   0.087064   1.298  0.19526    
+MedianIncome            0.107182   0.043121   2.486  0.01341 *  
+PropPricetoIncomeRatio -0.062899   0.032212  -1.953  0.05168 .  
+AvgSchoolRep           -0.048078   0.017346  -2.772  0.00588 ** 
+CorpTaxMax             -0.034774   0.021517  -1.616  0.10698    
+GDP5Year               -0.052292   0.032219  -1.623  0.10551    
+GDPperCap               0.339107   0.064238   5.279 2.31e-07 ***
+PC1_rev                -0.002395   0.002152  -1.113  0.26650    
+PC2_rev                 0.060692   0.004193  14.474  < 2e-16 ***
+PC3_rev                 0.021522   0.003432   6.271 1.08e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07535 on 342 degrees of freedom
+Multiple R-squared:  0.7772,	Adjusted R-squared:  0.7687 
+F-statistic: 91.75 on 13 and 342 DF,  p-value: < 2.2e-16
+

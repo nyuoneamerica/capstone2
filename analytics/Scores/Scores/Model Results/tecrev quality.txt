@@ -1,0 +1,34 @@
+[1] "##########################"
+[1] "Multiple Linear Regression on Tech Revenue - Quality"
+[1] "##########################"
+
+Call:
+lm(formula = TecRev ~ Amazon + PopDensity + MedianIncome + PropPricetoIncomeRatio + 
+    PovertyRate + HealthCareIndex + CostLivingComposit + landusescore + 
+    activityscore + streetscore + PC1_rev, data = quality2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.26521 -0.05328 -0.00732  0.04242  0.66020 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            -0.029687   0.036784  -0.807 0.420177    
+Amazon1                 0.107227   0.017055   6.287 9.81e-10 ***
+PopDensity              0.591236   0.090493   6.534 2.31e-10 ***
+MedianIncome            0.503979   0.058271   8.649  < 2e-16 ***
+PropPricetoIncomeRatio -0.108334   0.044507  -2.434 0.015438 *  
+PovertyRate            -0.023549   0.052152  -0.452 0.651886    
+HealthCareIndex         0.007953   0.028146   0.283 0.777693    
+CostLivingComposit     -0.009786   0.022264  -0.440 0.660546    
+landusescore           -0.009663   0.035962  -0.269 0.788327    
+activityscore           0.063681   0.041845   1.522 0.128969    
+streetscore             0.017139   0.044502   0.385 0.700382    
+PC1_rev                -0.010723   0.002927  -3.664 0.000288 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1054 on 344 degrees of freedom
+Multiple R-squared:  0.5616,	Adjusted R-squared:  0.5476 
+F-statistic: 40.06 on 11 and 344 DF,  p-value: < 2.2e-16
+

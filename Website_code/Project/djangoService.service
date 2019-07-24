@@ -1,0 +1,13 @@
+[Unit]
+Description= Cityapp
+After=network.target
+
+[Service]
+PIDFile=/run/DjangoApp/pid
+User=sudo
+WorkingDirectory= /home/bitnami/Project/
+ExecStart= /etc/systemd/system/djangoService.service
+PrivateTmp=True
+
+[Install]
+WantedBy=multi-user.target

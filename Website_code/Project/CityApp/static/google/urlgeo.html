@@ -1,0 +1,106 @@
+<html>
+  <head>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+                google.charts.load('current', {
+                    'packages':['geochart'],
+                    'mapsApiKey': 'AIzaSyC1R-o3SRuU3mDj-Iyj3cYmPZce_FXFg4o'
+                 });
+            google.charts.setOnLoadCallback(drawVisualization);
+     
+
+
+                //get rest url
+//                 var url = "http://127.0.0.1:8000/getmsa";
+//                 function GetURLParameter(url)
+// {
+//     var sPageURL = window.location.search.substring(1);
+//     var sURLVariables = sPageURL.split('&');
+//     for (var i = 0; i < sURLVariables.length; i++)
+//     {
+//         var sParameterName = sURLVariables[i].split('=');
+//         if (sParameterName[0] == sParam)
+//         {
+//             return decodeURIComponent(sParameterName[1]);
+//         }
+//     }
+// }​ 
+function drawVisualization() {
+    //Printing random json 
+        // const Http = new XMLHttpRequest();
+        //     const url='http://127.0.0.1:8000/getmsa';
+        //     Http.open("GET", url);
+        //     Http.send();
+        //     Http.onreadystatechange=(e)=>{
+        //     console.log(Http.responseText)
+        //     }
+        //var msa = GetURLParameter('MSA');
+        //var name= GetURLParameter('name');
+
+              var http = new XMLHttpRequest();
+  var url = 'http://127.0.0.1:8000/getmsa';
+//  var data = params ;
+  http.open('GET', url, true);
+
+  //Send the proper header information along with the request
+  http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+  http.onreadystatechange = function() {//Call a function when the state changes.
+      if(http.readyState == 4 && http.status == 200) {
+          var obj = JSON.parse(http.responseText);
+                  
+        
+      //  alert(http.responseText);
+      //window.location="C:/CityProject/templates/details.html" ;
+
+      }
+  }
+  http.send() ;
+    var data = new google.visualization.DataTable();
+       //To Add Column Dynamically
+
+    for (var j = 0; j < obj.length; j++) // this array contains columns
+     {
+      if (j == 0)
+      {
+          data2.addColumn(typeof (array[j]), array[j]);
+      }
+     else
+       {
+          data2.addColumn('number', array[j]);//if 2nd column must be integer
+       } 
+    }   
+     //   To Add Rows Dynamically to a google chart  
+
+                 data2.addRows(obj.length);//Total Rows
+                     for (var i = 0; i < obj.length; i++)
+                     {
+                        for (var k = 0; k < array.length; k++)//Total Column 
+                         {
+                           if (k == 0) 
+                             {
+                               data2.setCell(i, k, obj[i][array[k]].toString());//if first Column is String
+                             } 
+                              else
+                             {
+                               data2.setCell(i, k, parseInt([obj[i][array[k]]]));//if other columns are int type... for charts mostly we treat just first column as string
+                             }
+                         }
+                    }
+
+         
+      
+        
+
+     var geochart = new google.visualization.GeoChart(
+     document.getElementById('visualization'));
+     geochart.draw(data, {displayMode: 'markers',width: 556, height: 347, region: "US", resolution: "provinces"});
+}
+      
+    </script>
+  </head>
+  <body>
+    <div id="visualization" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

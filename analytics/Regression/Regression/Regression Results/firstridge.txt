@@ -1,0 +1,30 @@
+[1] "##########################"
+[1] "First Variable Cut with Ridge Regression"
+[1] "##########################"
+
+#(Intercept)             1.488220e+00
+#NumAirline              9.122145e-03
+#TaxableWageBase         6.379546e-03
+#PerofRev11             -6.324011e-03
+#PerofRev22              2.123504e-03
+#PerofRev44_45          -9.156522e-02
+#PerofRev51             -1.712036e-02
+#PerofRev52              7.025785e-03
+#PerofRev53             -3.626712e-02
+#PerofRev54             -2.050024e-02
+#PerofRev62             -2.849507e-01
+#PerofRev71              5.354693e-03
+#PerofRev72             -1.748010e-01
+#PerofRev55              4.302406e-03
+#AvgPropTaxPerCap        1.058509e-05
+#PovertyRate            -4.464812e-01
+#Electricity            -5.800223e-05
+#CorpTaxMax              1.838152e-01
+#WCIndex                -4.472801e-03
+#GDP5Year               -1.233853e-01
+#MaleFemaleRatio        -4.099508e-03
+#MedianAge               3.995853e-04
+#GDPperCap               3.686909e+00
+#TopGrad                 1.553890e-03
+#landusescore            5.046025e-05
+#activityscore           6.910573e-05

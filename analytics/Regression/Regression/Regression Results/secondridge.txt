@@ -1,0 +1,14 @@
+[1] "##########################"
+[1] "Second Variable Cut with Ridge Regression (after PCA)"
+[1] "##########################"
+
+#(Intercept)             2.141026e+00
+#PC1                    -3.830211e-02
+#PC2                     4.064659e-02
+#NumAirline              6.524268e-03
+#GDP                     1.459783e-02
+#PovertyRate            -5.761459e-01
+#CorpTaxMax              1.532226e-01
+#GDP5Year               -3.110169e-02
+#MaleFemaleRatio        -3.809430e-03
+#GDPperCap               4.046149e+00

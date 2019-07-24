@@ -1,0 +1,57 @@
+
+<html>
+        <head>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript" src="jquery.min.js"></script>
+                
+          <script type="text/javascript">
+
+            google.charts.load('current', {
+              'packages':['geochart'],
+              'mapsApiKey': 'AIzaSyC1R-o3SRuU3mDj-Iyj3cYmPZce_FXFg4o'
+            });
+            google.charts.setOnLoadCallback(drawVisualization);
+
+              // States
+              function drawVisualization() {
+                var jsonData = $.ajax({
+      url: "http://45.35.64.128:8000/getmsa",
+      type:'GET',
+      dataType:"json",
+      async: false,
+      success: function(data) {
+        console.log(data); // so you can check if that data is in the format you need
+       // Create our data table out of JSON data loaded from server.
+        var pieData = data;
+        var chartData = [];
+        var header = ["MSA"]
+        chartData.push(header);
+        pieData.forEach(element => {
+          var dataarr = [];
+              dataarr.push(element.MSA);
+              chartData.push(dataarr);
+         });
+      var options = {
+                region: "US",
+                radius : 0,
+                resolution: "provinces",
+                displayMode: 'markers',
+                colorAxis: {colors: ['#e7711c', '#4374e0']} // orange to blue
+      };
+      var data = new google.visualization.arrayToDataTable(chartData);
+              
+      
+        var geochart = new google.visualization.GeoChart(
+            document.getElementById('visualization'));
+        geochart.draw(data,options);
+      }
+    });
+  }
+      </script>
+       </head>
+        <body>
+          <div id="visualization" style="width: 900px; height: 500px;"></div>
+        </body>
+      </html>
+
+
